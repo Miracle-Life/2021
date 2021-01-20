@@ -1,0 +1,14 @@
+
+<table class="table">
+  <tr class="table table-striped row ">
+    <th class="name col-3">{{author.name}}</th>
+    <th class="surname col-3">{{author.surname}}</th>
+    <th class="date col-2">{{author.date}}</th>
+    <td class="date col-4">
+      <button class="btn btn-outline-success " routerLink='/edit-author'>Редактировать</button>
+      <button class="btn btn-outline-danger remove " (click)="removeAuthor()">Удалить</button>
+      <button class="btn btn-outline-info " routerLink='/info-author'>Детально</button>
+    </td>
+  </tr>
+</table>
+

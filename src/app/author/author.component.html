@@ -1,0 +1,16 @@
+<div class="container-xl ">
+  <p>author works!</p>
+  <button type="button" class="btn btn-dark btn-default" value="Добавить" routerLink="/add-author" >Добавить автора</button>
+  <br>
+  <table  class="table table-striped " >
+    <tr class="row">
+      <th class="col-3"> Фамилия </th>
+      <th class="col-3"> Имя </th>
+      <th class="col-2"> Дата рождения </th>
+      <td class="col-4">
+
+    </tr>
+  </table>
+  <app-contact *ngFor="let author of authors" [author]="author"  (remove)="updateAuthor()" class="table"></app-contact>
+</div>
+
